@@ -4,10 +4,13 @@
              xmlns:local="clr-namespace:Keyboard"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <Style x:Key="Font">
+            <Setter Property="Control.FontSize" Value="24"/>
+        </Style>
         <Style TargetType="Button" x:Key="DownButton">
             <Setter Property="Background" Value="#FF585858" />
         </Style>
-        <Style x:Key="StyleButton" TargetType="Button">
+        <Style x:Key="StyleButton" TargetType="Button" BasedOn="{StaticResource Font}">
             <Setter Property="Margin" Value="3"/>
             <Setter Property="Template">
                 <Setter.Value>
@@ -28,6 +31,7 @@
                                     </Setter.Value>
                                 </Setter>
                             </Trigger>
+                            <Trigger Property="IsEnabled" Value="False"/>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>

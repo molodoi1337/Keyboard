@@ -59,10 +59,10 @@
         <Button Background="MediumPurple" Content="y" Grid.Column="6" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
         <Button Background="MediumPurple" Content="u" Grid.Column="7" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
         <Button Background="LightPink" Content="i" Grid.Column="8" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="Yellow" Content="o" Grid.Column="9" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightGreen" Content="p" Grid.Column="10" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightGreen" Content="[" Grid.Column="11" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightGreen" Content="]" Grid.Column="12" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
+        <Button Background="Yellow" Content="o" Grid.Column="9" Grid.Row="3" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightGreen" Content="p" Grid.Column="10" Grid.Row="3" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightGreen" Content="[" Grid.Column="11" Grid.Row="3" Style="{StaticResource StyleButton}" />
+        <Button Background="LightGreen" Content="]" Grid.Column="12" Grid.Row="3" Style="{StaticResource StyleButton}" />
         <Button Background="LightGreen" Content="\" Grid.Column="13" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
         <Button Content="CapsLock" Grid.Column="0" Grid.Row="4" Style="{StaticResource StyleButton}" FontSize="16" IsEnabled="False"/>
         <Button Background="LightPink" Content="a" Grid.Column="1" Grid.Row="4" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
