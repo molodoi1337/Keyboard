@@ -98,7 +98,7 @@
         <Button Content="Ctrl" Grid.Column="13" Grid.Row="6" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
         <Button x:Name="Start" Content="Start" Grid.Column="10" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Margin="10" Click="ScreenOutput"/>
         <Button x:Name="Stop" Content="Stop" Grid.Column="12" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Margin="10" IsEnabled="False" Click="StopButton_Click_1"/>
-        <TextBox x:Name="Output" Grid.Column="0" Grid.ColumnSpan="14" BorderThickness="0" Background="#FFC1E2FF" Margin="1,29,0,2" Grid.Row="1" FontSize="24" KeyDown="Output_KeyDown"/>
+        <TextBox x:Name="Output" Grid.Column="0" Grid.ColumnSpan="14" BorderThickness="0" Background="#FFC1E2FF" Margin="1,29,0,2" Grid.Row="1" FontSize="24" PreviewKeyDown="Output_PreviewKeyDown"/>
         <Label Content="Fails: " Grid.Column="3" Grid.Row="0" FontSize="14"/>
         <TextBlock x:Name="Fails" Grid.Column="3" HorizontalAlignment="Right" FontSize="14" Margin="6"/>
 

@@ -84,7 +84,7 @@ namespace Keyboard
         }
         int index = 0;
 
-        private void Output_KeyDown(object sender, KeyEventArgs e)
+        private void Output_PreviewKeyDown(object sender, KeyEventArgs e)
         {
             char[] array = Input.Text.ToCharArray();
             if (e.Key.ToString().ToLower() == array[index].ToString())
