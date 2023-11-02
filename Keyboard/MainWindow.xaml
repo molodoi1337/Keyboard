@@ -35,72 +35,74 @@
         <Slider x:Name="Level" Grid.Row="0" Grid.Column="12" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="6" Minimum="1" Maximum="26" TickFrequency="1" IsSnapToTickEnabled="True"/>
         <TextBox x:Name="LevelBox" Grid.Row="0" Grid.Column="11" VerticalAlignment="Top" TextAlignment="Right" BorderThickness="0" Margin="6" IsReadOnly="True" Text="{Binding ElementName=Level, StringFormat=0, Path=Value, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"/>
         <Label Content="Difficuly:" Grid.Row="0" Grid.Column="10" VerticalAlignment="Top"  HorizontalAlignment="Center" Grid.ColumnSpan="2" FontSize="14"/>
-        <TextBox x:Name="Input" Grid.Column="0" Grid.ColumnSpan="14" BorderThickness="0" Background="#FFC1E2FF" Margin="0,62,0,17" Grid.RowSpan="2" IsReadOnly="True" FontSize="24"/>
-        <Button Background="LightPink" Content="`" Grid.Column="0" Grid.Row="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightPink" Content="1" Grid.Column="1" Grid.Row="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightPink" Content="2" Grid.Column="2" Grid.Row="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="Yellow" Content="3" Grid.Column="3" Grid.Row="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightGreen" Content="4" Grid.Column="4" Grid.Row="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="CadetBlue" Content="5" Grid.Column="5" Grid.Row="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="CadetBlue" Content="6" Grid.Column="6" Grid.Row="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="MediumPurple" Content="7" Grid.Column="7" Grid.Row="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="MediumPurple" Content="8" Grid.Column="8" Grid.Row="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightPink" Content="9" Grid.Column="9" Grid.Row="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="Yellow" Content="0" Grid.Column="10" Grid.Row="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightGreen" Content="-" Grid.Column="11" Grid.Row="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightGreen" Content="=" Grid.Column="12" Grid.Row="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Content="backspace" Grid.Column="13" Grid.Row="2" Style="{StaticResource StyleButton}" FontSize="15" IsEnabled="False"/>
-        <Button Content="Tab" Grid.Column="0" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="20" IsEnabled="False"/>
-        <Button Background="LightPink" Content="q" Grid.Column="1" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="Yellow" Content="w" Grid.Column="2" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightGreen" Content="e" Grid.Column="3" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="CadetBlue" Content="r" Grid.Column="4" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False" />
-        <Button Background="CadetBlue" Content="t" Grid.Column="5" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="MediumPurple" Content="y" Grid.Column="6" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="MediumPurple" Content="u" Grid.Column="7" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightPink" Content="i" Grid.Column="8" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
+        <TextBox x:Name="Input" Grid.Column="0" Grid.ColumnSpan="14" BorderThickness="0" Background="#FFC1E2FF" Margin="0,59,0,20" Grid.RowSpan="2" IsReadOnly="True" FontSize="24"/>
+        <Button Background="LightPink" Content="`" Grid.Column="0" Grid.Row="2" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightPink" Content="1" Grid.Column="1" Grid.Row="2" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightPink" Content="2" Grid.Column="2" Grid.Row="2" Style="{StaticResource StyleButton}"/>
+        <Button Background="Yellow" Content="3" Grid.Column="3" Grid.Row="2" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightGreen" Content="4" Grid.Column="4" Grid.Row="2" Style="{StaticResource StyleButton}"/>
+        <Button Background="CadetBlue" Content="5" Grid.Column="5" Grid.Row="2" Style="{StaticResource StyleButton}"/>
+        <Button Background="CadetBlue" Content="6" Grid.Column="6" Grid.Row="2" Style="{StaticResource StyleButton}" />
+        <Button Background="MediumPurple" Content="7" Grid.Column="7" Grid.Row="2" Style="{StaticResource StyleButton}" />
+        <Button Background="MediumPurple" Content="8" Grid.Column="8" Grid.Row="2" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightPink" Content="9" Grid.Column="9" Grid.Row="2" Style="{StaticResource StyleButton}"/>
+        <Button Background="Yellow" Content="0" Grid.Column="10" Grid.Row="2" Style="{StaticResource StyleButton}" />
+        <Button Background="LightGreen" Content="-" Grid.Column="11" Grid.Row="2" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightGreen" Content="=" Grid.Column="12" Grid.Row="2" Style="{StaticResource StyleButton}"/>
+        <Button Content="backspace" Grid.Column="13" Grid.Row="2" Style="{StaticResource StyleButton}" FontSize="16"/>
+        <Button Content="Tab" Grid.Column="0" Grid.Row="3" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightPink" Content="q" Grid.Column="1" Grid.Row="3" Style="{StaticResource StyleButton}"/>
+        <Button Background="Yellow" Content="w" Grid.Column="2" Grid.Row="3" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightGreen" Content="e" Grid.Column="3" Grid.Row="3" Style="{StaticResource StyleButton}"/>
+        <Button Background="CadetBlue" Content="r" Grid.Column="4" Grid.Row="3" Style="{StaticResource StyleButton}" />
+        <Button Background="CadetBlue" Content="t" Grid.Column="5" Grid.Row="3" Style="{StaticResource StyleButton}"/>
+        <Button Background="MediumPurple" Content="y" Grid.Column="6" Grid.Row="3" Style="{StaticResource StyleButton}"/>
+        <Button Background="MediumPurple" Content="u" Grid.Column="7" Grid.Row="3" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightPink" Content="i" Grid.Column="8" Grid.Row="3" Style="{StaticResource StyleButton}"/>
         <Button Background="Yellow" Content="o" Grid.Column="9" Grid.Row="3" Style="{StaticResource StyleButton}"/>
         <Button Background="LightGreen" Content="p" Grid.Column="10" Grid.Row="3" Style="{StaticResource StyleButton}"/>
         <Button Background="LightGreen" Content="[" Grid.Column="11" Grid.Row="3" Style="{StaticResource StyleButton}" />
         <Button Background="LightGreen" Content="]" Grid.Column="12" Grid.Row="3" Style="{StaticResource StyleButton}" />
-        <Button Background="LightGreen" Content="\" Grid.Column="13" Grid.Row="3" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Content="CapsLock" Grid.Column="0" Grid.Row="4" Style="{StaticResource StyleButton}" FontSize="16" IsEnabled="False"/>
-        <Button Background="LightPink" Content="a" Grid.Column="1" Grid.Row="4" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="Yellow" Content="s" Grid.Column="2" Grid.Row="4" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightGreen" Content="d" Grid.Column="3" Grid.Row="4" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="CadetBlue" Content="f" Grid.Column="4" Grid.Row="4" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="CadetBlue" Content="g" Grid.Column="5" Grid.Row="4" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="MediumPurple" Content="h" Grid.Column="6" Grid.Row="4" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="MediumPurple" Content="j" Grid.Column="7" Grid.Row="4" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightPink" Content="k" Grid.Column="8" Grid.Row="4" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="Yellow" Content="l" Grid.Column="9" Grid.Row="4" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightGreen" Content=";" Grid.Column="10" Grid.Row="4" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightGreen" Content="'" Grid.Column="11" Grid.Row="4" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Content="Enter" Grid.Column="12" Grid.Row="4" Grid.ColumnSpan="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Content="Shift" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Content="Shift" Grid.Column="12" Grid.Row="5" Grid.ColumnSpan="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightPink" Content="z" Grid.Column="2" Grid.Row="5" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="Yellow" Content="x" Grid.Column="3" Grid.Row="5" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightGreen" Content="c" Grid.Column="4" Grid.Row="5" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="CadetBlue" Content="v" Grid.Column="5" Grid.Row="5" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="CadetBlue" Content="b" Grid.Column="6" Grid.Row="5" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="MediumPurple" Content="n" Grid.Column="7" Grid.Row="5" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="MediumPurple" Content="m" Grid.Column="8" Grid.Row="5" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightPink" Content="," Grid.Column="9" Grid.Row="5" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="Yellow" Content="." Grid.Column="10" Grid.Row="5" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="LightGreen" Content="/" Grid.Column="11" Grid.Row="5" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Content="Ctrl" Grid.Column="0" Grid.Row="6" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Content="Win" Grid.Column="1" Grid.Row="6" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Content="Alt" Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Background="SandyBrown" Content="Space" Grid.Column="4" Grid.Row="6" Grid.ColumnSpan="6" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Content="Alt" Grid.Column="10" Grid.Row="6" Grid.ColumnSpan="2" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Content="Win" Grid.Column="12" Grid.Row="6" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
-        <Button Content="Ctrl" Grid.Column="13" Grid.Row="6" Style="{StaticResource StyleButton}" FontSize="24" IsEnabled="False"/>
+        <Button Background="LightGreen" Content="\" Grid.Column="13" Grid.Row="3" Style="{StaticResource StyleButton}"/>
+        <Button Content="CapsLock" Grid.Column="0" Grid.Row="4" Style="{StaticResource StyleButton}" FontSize="18"/>
+        <Button Background="LightPink" Content="a" Grid.Column="1" Grid.Row="4" Style="{StaticResource StyleButton}"/>
+        <Button Background="Yellow" Content="s" Grid.Column="2" Grid.Row="4" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightGreen" Content="d" Grid.Column="3" Grid.Row="4" Style="{StaticResource StyleButton}"/>
+        <Button Background="CadetBlue" Content="f" Grid.Column="4" Grid.Row="4" Style="{StaticResource StyleButton}" />
+        <Button Background="CadetBlue" Content="g" Grid.Column="5" Grid.Row="4" Style="{StaticResource StyleButton}"/>
+        <Button Background="MediumPurple" Content="h" Grid.Column="6" Grid.Row="4" Style="{StaticResource StyleButton}" />
+        <Button Background="MediumPurple" Content="j" Grid.Column="7" Grid.Row="4" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightPink" Content="k" Grid.Column="8" Grid.Row="4" Style="{StaticResource StyleButton}"/>
+        <Button Background="Yellow" Content="l" Grid.Column="9" Grid.Row="4" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightGreen" Content=";" Grid.Column="10" Grid.Row="4" Style="{StaticResource StyleButton}" />
+        <Button Background="LightGreen" Content="'" Grid.Column="11" Grid.Row="4" Style="{StaticResource StyleButton}"/>
+        <Button Content="Enter" Grid.Column="12" Grid.Row="4" Grid.ColumnSpan="2" Style="{StaticResource StyleButton}"/>
+        <Button Content="Shift" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" Style="{StaticResource StyleButton}"/>
+        <Button Content="Shift" Grid.Column="12" Grid.Row="5" Grid.ColumnSpan="2" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightPink" Content="z" Grid.Column="2" Grid.Row="5" Style="{StaticResource StyleButton}"/>
+        <Button Background="Yellow" Content="x" Grid.Column="3" Grid.Row="5" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightGreen" Content="c" Grid.Column="4" Grid.Row="5" Style="{StaticResource StyleButton}"/>
+        <Button Background="CadetBlue" Content="v" Grid.Column="5" Grid.Row="5" Style="{StaticResource StyleButton}"/>
+        <Button Background="CadetBlue" Content="b" Grid.Column="6" Grid.Row="5" Style="{StaticResource StyleButton}"/>
+        <Button Background="MediumPurple" Content="n" Grid.Column="7" Grid.Row="5" Style="{StaticResource StyleButton}"/>
+        <Button Background="MediumPurple" Content="m" Grid.Column="8" Grid.Row="5" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightPink" Content="," Grid.Column="9" Grid.Row="5" Style="{StaticResource StyleButton}"/>
+        <Button Background="Yellow" Content="." Grid.Column="10" Grid.Row="5" Style="{StaticResource StyleButton}"/>
+        <Button Background="LightGreen" Content="/" Grid.Column="11" Grid.Row="5" Style="{StaticResource StyleButton}"/>
+        <Button Content="Ctrl" Grid.Column="0" Grid.Row="6" Style="{StaticResource StyleButton}"/>
+        <Button Content="Win" Grid.Column="1" Grid.Row="6" Style="{StaticResource StyleButton}"/>
+        <Button Content="Alt" Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="2" Style="{StaticResource StyleButton}" />
+        <Button Background="SandyBrown" Content="Space" Grid.Column="4" Grid.Row="6" Grid.ColumnSpan="6" Style="{StaticResource StyleButton}"/>
+        <Button Content="Alt" Grid.Column="10" Grid.Row="6" Grid.ColumnSpan="2" Style="{StaticResource StyleButton}"/>
+        <Button Content="Win" Grid.Column="12" Grid.Row="6" Style="{StaticResource StyleButton}"/>
+        <Button Content="Ctrl" Grid.Column="13" Grid.Row="6" Style="{StaticResource StyleButton}"/>
         <Button x:Name="Start" Content="Start" Grid.Column="10" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Margin="10" Click="ScreenOutput"/>
         <Button x:Name="Stop" Content="Stop" Grid.Column="12" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Margin="10" IsEnabled="False" Click="StopButton_Click_1"/>
-        <TextBox x:Name="Output" Grid.Column="0" Grid.ColumnSpan="14" BorderThickness="0" Background="#FFC1E2FF" Margin="1,29,0,2" Grid.Row="1" FontSize="24" PreviewKeyDown="Output_PreviewKeyDown"/>
+        <TextBox x:Name="Output" Grid.Column="0" Grid.ColumnSpan="14" BorderThickness="0" Background="#FFC1E2FF" Margin="0,31,1,0" Grid.Row="1" FontSize="24" PreviewKeyDown="Output_PreviewKeyDown"/>
         <Label Content="Fails: " Grid.Column="3" Grid.Row="0" FontSize="14"/>
         <TextBlock x:Name="Fails" Grid.Column="3" HorizontalAlignment="Right" FontSize="14" Margin="6"/>
+        <Label Content="char/min:" FontSize="14"/>
+        <TextBlock x:Name="CharMin" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" Margin="0,5" FontSize="14"/>
 
     </Grid>
 </Window>

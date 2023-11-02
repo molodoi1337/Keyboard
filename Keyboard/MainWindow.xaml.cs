@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Windows;
 using System.Windows.Input;
 
@@ -45,6 +46,11 @@ namespace Keyboard
 
         private void ScreenOutput(object sender, RoutedEventArgs e)
         {
+            Input.Text = null;
+            Output.Text = null;
+            Output.IsReadOnly = false;
+            fails = 0;
+
             char[] mass = СharacterSelection();
             int count = 0;
             int tempRnd;
@@ -80,23 +86,38 @@ namespace Keyboard
 
         private void StopButton_Click_1(object sender, RoutedEventArgs e)
         {
-
+            Start.IsEnabled = true;
+            Stop.IsEnabled = false;
+            Output.IsReadOnly = true;
+            Level.IsEnabled = true;
+            index = 0;
         }
-        int index = 0;
 
-        private void Output_PreviewKeyDown(object sender, KeyEventArgs e)
+        int index = 0;
+        char[] array;
+        private void Output_PreviewKeyDown(object sender, KeyEventArgs e)// Сделать при вводе символа обозначение его на экране
         {
-            char[] array = Input.Text.ToCharArray();
-            if (e.Key.ToString().ToLower() == array[index].ToString())
+            array = Input.Text.ToCharArray();
+            if (e.Key != Key.Back && e.Key != Key.LWin && e.Key != Key.CapsLock && e.Key != Key.LeftAlt && e.Key != Key.RightAlt && e.Key != Key.Tab && e.Key != Key.LeftShift && e.Key != Key.RightShift && e.Key != Key.LeftCtrl && e.Key != Key.RightCtrl)
             {
-                fails++;
+                if (index < array.Length)
+                {
+                    if (e.Key.ToString().ToLower() != array[index].ToString() && e.Key != Key.Space)
+                    {
+                        fails++;
+                    }
+                    if (e.Key == Key.Space && array[index] != ' ')
+                    {
+                        fails++;
+                    }
+                    Fails.Text = fails.ToString();
+                    index++;
+                }
+                else
+                    StopButton_Click_1(sender,e); array = null;
             }
-            if (e.Key == Key.Space && array[index] == ' ')
-            {
-                fails++;
-            }
-            Fails.Text = fails.ToString();
-            index++;
+            else
+                e.Handled = true;
         }
     }
 }
