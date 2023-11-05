@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Windows;
 using System.Windows.Input;
+using System.Diagnostics;
 
 namespace Keyboard
 {
@@ -11,6 +12,8 @@ namespace Keyboard
     public partial class MainWindow : Window
     {
         Random random = new Random();
+        Stopwatch sw = new Stopwatch();
+
         int rand;
         int fails = 0;
 
@@ -18,7 +21,7 @@ namespace Keyboard
         {
             InitializeComponent();
         }
-
+        
         public char[] СharacterSelection()
         {
             double level = Level.Value;
@@ -46,6 +49,7 @@ namespace Keyboard
 
         private void ScreenOutput(object sender, RoutedEventArgs e)
         {
+            Output.Focusable = true;
             Input.Text = null;
             Output.Text = null;
             Output.IsReadOnly = false;
@@ -60,6 +64,7 @@ namespace Keyboard
             Level.IsEnabled = false;
             Stop.IsEnabled = true;
             Start.IsEnabled = false;
+
             if (mass.Length > 0)
             {
                 while (count < 60)
@@ -81,7 +86,7 @@ namespace Keyboard
                     count++;
                 }
             }
-
+            sw.Start();
         }
 
         private void StopButton_Click_1(object sender, RoutedEventArgs e)
@@ -91,12 +96,15 @@ namespace Keyboard
             Output.IsReadOnly = true;
             Level.IsEnabled = true;
             index = 0;
+            Output.Focusable = false;
+            sw.Reset();
         }
 
         int index = 0;
         char[] array;
         private void Output_PreviewKeyDown(object sender, KeyEventArgs e)// Сделать при вводе символа обозначение его на экране
         {
+            CharMin.Text = Math.Round((double)Output.Text.Length / (sw.ElapsedMilliseconds / 1000) * 60).ToString();
             array = Input.Text.ToCharArray();
             if (e.Key != Key.Back && e.Key != Key.LWin && e.Key != Key.CapsLock && e.Key != Key.LeftAlt && e.Key != Key.RightAlt && e.Key != Key.Tab && e.Key != Key.LeftShift && e.Key != Key.RightShift && e.Key != Key.LeftCtrl && e.Key != Key.RightCtrl)
             {
@@ -114,7 +122,7 @@ namespace Keyboard
                     index++;
                 }
                 else
-                    StopButton_Click_1(sender,e); array = null;
+                    StopButton_Click_1(sender, e); array = null;
             }
             else
                 e.Handled = true;
